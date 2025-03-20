@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ViewModel.AgeCounterController">
+    <Button fx:id="calculate" layoutX="387.0" layoutY="175.0" mnemonicParsing="false" onAction="#calculate" text="Calculate" />
+    <DatePicker fx:id="datePicker" layoutX="213.0" layoutY="126.0" onAction="#datePicker" promptText="dd/mm/yyyy">
+        <opaqueInsets>
+            <Insets />
+        </opaqueInsets>
+    </DatePicker>
+    <Label layoutX="65.0" layoutY="129.0" prefHeight="19.0" prefWidth="130.0" text="Insert your birthday" textFill="#2109da">
+        <font>
+            <Font name="Arial" size="14.0" />
+        </font>
+    </Label>
+    <Label layoutX="235.0" layoutY="44.0" prefHeight="44.0" prefWidth="130.0" text="Age Counter" textFill="#f50000">
+        <font>
+            <Font name="Dubai Regular" size="24.0" />
+        </font>
+    </Label>
+    <Label layoutX="37.0" layoutY="286.0" prefHeight="17.0" prefWidth="65.0" text="Result" />
+    <TextField fx:id="result" editable="false" layoutX="121.0" layoutY="282.0" prefHeight="25.0" prefWidth="359.0" promptText="You'r age">
+        <cursor>
+            <Cursor fx:constant="DEFAULT" />
+        </cursor>
+        <effect>
+            <InnerShadow>
+            <color>
+               <Color red="0.3947368562221527" green="0.29422515630722046" blue="0.29422515630722046" />
+            </color></InnerShadow>
+        </effect>
+      <font>
+         <Font name="Arial" size="12.0" />
+      </font>
+    </TextField>
+</AnchorPane>
